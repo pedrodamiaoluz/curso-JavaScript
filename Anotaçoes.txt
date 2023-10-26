@@ -13,3 +13,4 @@ document.querySelector('img#hplogo').style.visibility = 'hidden'
 'hidden'
 document.querySelector('input.lsb').style.visibility = 'hidden'
 'hidden'
+
