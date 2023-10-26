@@ -1,5 +1,14 @@
                             Curso JavaScript
 
+=====================Como fazer commit no terminal==================
+
+- git init
+- git add README.md
+- git commit -m "mensagem"
+- git branch -M main
+- git remote add origin link
+- git push -u origin main
+
 ====================== Como Fazer no console========================
 document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'
 'grayscale(100%)'
