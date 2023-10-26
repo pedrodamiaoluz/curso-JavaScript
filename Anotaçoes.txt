@@ -1,0 +1,15 @@
+                            Curso JavaScript
+
+====================== Como Fazer no console========================
+document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'
+'grayscale(100%)'
+document.body.style.background = 'black'
+'black'
+document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'
+'grayscale(100%)'
+document.querySelector('img#hplogo').style.filter = 'red(100%)'
+'red(100%)'
+document.querySelector('img#hplogo').style.visibility = 'hidden'
+'hidden'
+document.querySelector('input.lsb').style.visibility = 'hidden'
+'hidden'
