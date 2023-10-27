@@ -1,6 +1,6 @@
                             Curso JavaScript
 
-=====================Como fazer commit no terminal==================
+===================== Como fazer commit no terminal ==================
 
 - git init
 - git add README.md
@@ -9,7 +9,8 @@
 - git remote add origin link
 - git push -u origin main
 
-====================== Como Fazer no console========================
+====================== Como Fazer no console =========================
+
 document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'
 'grayscale(100%)'
 document.body.style.background = 'black'
@@ -22,4 +23,55 @@ document.querySelector('img#hplogo').style.visibility = 'hidden'
 'hidden'
 document.querySelector('input.lsb').style.visibility = 'hidden'
 'hidden'
+document.querySelector('span.bsth-hl-title').innerText = 'Uma mensagem'
 
+================ Aula 04 criando seu primeiro script ===================
+
+alert(`Ola mundo!!`)
+confirm(`Esta gostando do curso`) // janela com botao de ok e cancela
+prompt(`Qual e seu nome`)// janela perguntando qual e seu nome
+
+================ Aula 05 Variaveis e Tipos primitivos ===================
+
+-> Identificadores:
+
+- Pode comecar com letras, $ ou _
+- Nao podem comecar com numero
+- E possivel usar letras ou numeros
+- E Possivel usar acentos e numeros
+- Nao podem conter espacos 
+- Nao podem ser palavras reservadas
+
+-> Variaveis:
+
+- var nome = "Pedro Damiao"
+- nome = "Paulo"
+- var idade = 14
+- var salario = 2345
+- var sexo = "M"
+
+-> Dicas:
+
+. "Maiusculas e minusculas" fazem diferenca.
+. Tente escolher "nomes coerentes" para as Variaveis
+. Evite se tornar um "Programador alfabeto" ou um "Programador
+contador".
+
+- O que o javascript considera:
+
+1 3 4 3.3 -4.6 considera como number
+"Pedro" 'JavaScript' `Maria` considera como string
+true false considera como boolean
+
+- Data Types:
+. typeof "mostra qual e o tipo da variavel"
+
+=> number
+. "infinity, NaN"
+=> string
+=> boolean
+=> null
+=> undefined
+=> object 
+=> Array "vetor"
+=> function "funcao"
