@@ -75,3 +75,42 @@ true false considera como boolean
 => object 
 => Array "vetor"
 => function "funcao"
+
+================ Aula 06 Tratamento de Dados ===================
+
+=> Manipulação de dados:
+
+- Conferção string Para número:
+
+. Number.parseInt(n);
+. Number.parseFloat(n);
+. Number(n);
+
+- Conferção número Para string:
+
+. String(n);
+. n.toString();
+
+- Formatando String:
+
+var s = 'JavaScript'
+
+> s
+'JavaScript'
+
+> 'Eu estou estudando s' // não faz interpolação
+'Eu estou estudando s'
+
+> Eu estou estudando ' + s // usa concatenação
+'Eu estou estudando JavaScript'
+
+> nome = 'Pedro'
+'Pedro'
+> idade = 24
+24
+> nota = 6.7
+6.7
+> 'O aluno ' + nome + ' com ' + idade + ' Anos tirou a nota ' + nota
+'O aluno Pedro com 24 Anos tirou a nota 6.7'
+> `O aluno ${nome} com ${idade} anos tirou a nota ${nota}` // usa template string.
+'O aluno Pedro com 24 anos tirou a nota 6.7'
