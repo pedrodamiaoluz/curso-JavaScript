@@ -114,3 +114,8 @@ var s = 'JavaScript'
 'O aluno Pedro com 24 Anos tirou a nota 6.7'
 > `O aluno ${nome} com ${idade} anos tirou a nota ${nota}` // usa template string.
 'O aluno Pedro com 24 anos tirou a nota 6.7'
+
+var s = 'Pedro'
+s.length // Quantos caracteres a string tem
+s.toUpperCase() // Deixa todas as letras Maiusculas.
+s.toLowerCase() // Deixa todas as letras minusculas
