@@ -118,4 +118,89 @@ var s = 'JavaScript'
 var s = 'Pedro'
 s.length // Quantos caracteres a string tem
 s.toUpperCase() // Deixa todas as letras Maiusculas.
-s.toLowerCase() // Deixa todas as letras minusculas
+s.toLowerCase() // Deixa todas as letras minusculasto
+
+var nome = prompt("Qual é seu nome: ");
+- document.write(`<strong>${nome}</strong> Tem ${nome.length}, Caractere <br>`)
+- document.write(`Mim chamo <strong>${nome.toUpperCase()}</strong> <br>`)
+- document.write(`Mim Chamo <strong>${nome.toLowerCase()}</strong>`)
+
+
+- Formatando Número:
+
+ var n1 = 1234.5
+
+ n1.toFixed(2)// Duas casa apos a vircula
+'1234.50'
+ n1.toFixed(2).replace('.', ',')// Ta tranformando o ponto em vircula
+'1234,50'
+
+ n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+'R$ 1.234,50' // O valor em real
+ n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})
+'US$ 1.234,50' // O valr em dola
+ n1.toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'})
+'€ 1.234,50' // O valor em euro.
+ 
+
+======================== Aula 07 Operadores =========================
+
+- Operadores em JavaScript:
+
+. Aritméticos:
+
+  "+" // Soma
+  "-" // Subtração
+  "*" // Multiblicação
+  "/" // Divisão
+  "%" // Resto da Divisão inteira
+  "**" // Potência
+
+  - Precedência:
+
+"()" // Parentize
+"**" // Potência
+"* / %" // Mut,Div e RDI
+"+ -" // Soma e Subtração
+
+. Atribuição
+. Relacionais
+. Lógicos
+. Ternario
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
