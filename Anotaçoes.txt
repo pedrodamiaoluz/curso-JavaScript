@@ -143,7 +143,7 @@ var nome = prompt("Qual é seu nome: ");
 '€ 1.234,50' // O valor em euro.
  
 
-======================== Aula 07 Operadores =========================
+======================== Aula 07-08 Operadores =========================
 
 - Operadores em JavaScript:
 
@@ -164,9 +164,50 @@ var nome = prompt("Qual é seu nome: ");
 "+ -" // Soma e Subtração
 
 . Atribuição
-. Relacionais
+
+> var n1 = 5+3
+> var n2 = n1%5
+> var n3 = 5*n2**2
+> var n4 = (10-n1)/2
+> var n4 = 10-n1/2
+> var n5 = 6*2/n4
+> var n6 = n2%n5+4/n5
+
+- Auto-atribuição:
+
+> var n = 3
+> n = n+4 n+=4
+> n = n-5 n-=5
+> n = n*4 n*=4
+> n = n/2 n/=2
+> n = n**2 n**=2
+> n = n%5  n%=5
+
+- Incremento:
+
+> var x=5
+> x = x+1  x++
+> x = x-1  x--
+
+. Relacionais:
+
+">" // Maior
+"<" // Menor
+">=" // MaiorIgual
+"<=" // MenorIgual
+"==" // Igual
+"!=" // Deferente
+
+- Identidade:
+
+5==5 -> true
+5=='5' 
+5==="5" // compara se eles são identicos
+
 . Lógicos
 . Ternario
+
+
 
 
 
