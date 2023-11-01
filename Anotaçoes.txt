@@ -253,19 +253,63 @@ var nome = prompt("Qual é seu nome: ");
 > sexo = 'M'
 > salario > 1500 && sexo != 'M'
 
-. Ternario
+. Ternário
 
+"?" 
+":"
+- Eles três partes:
 
+=====================
+teste ? true : false|
+=====================
 
+- Exemplos:
 
+> var media = 5.5
+> media > 7?'Aprovado':'Reprovado'
+> media = 8
+> media > 7?'Aprovado':'Reprovado'
+> media -=3
+> media > 7?'Aprovado':'Reprovado'
+> media +=4
+> media > 7?'Aprovado':'Reprovado'
 
+> var x = 8
+> var res = x % 2 == 0 > 5:9
 
+> var idade = 19
+> var r = idade >= 18 ? 'Maior' : 'Menor'
 
+=================== Aula 09 Introdução ao Dom =====================
 
+- Árvore Dom
 
+      ========= window =========
+      |           |            |
+  location    document      history
+                  |
+            ==== html ====
+            |            |
+        == head ==     = body =
+        |        |     |      |
+      meta     title   |      |
+                     ==|==  == ==
+                     |   |  |   |
+                     h1  p  p  div
+                            |
+                          strong
 
+- Exemplos:
 
+window.document.write(window.document.charset)
 
+- Elementos:
+
+Por marca
+Por ID
+Por nome
+Por Classe
+Por Selector
 
 
 
