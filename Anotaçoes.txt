@@ -354,7 +354,42 @@ window.document.write(window.document.charset)
 . window.document.write(d.innerHTML);
 
 
+================= Aula 10 Eventos Dom =====================
 
+Dom é (Document Object Model)
+
+- Eventos Dom:
+
+. mouseenter
+. mousemove
+. mousedown
+. mouseup
+. click
+. mouseout
+
+- Funções:
+
+functionação(parametros){
+  bloco
+}
+
+var a = window.document.getElementById('area');
+a.addEventListener('click',clicar);
+a.addEventListener('mouseenter',entra);
+a.addEventListener('mouseout',sair);
+
+function clicar() {
+  a.innerText = 'Clicou!!';
+  a.style.background = 'red'
+}
+function entra(){
+  a.innerText = 'Entrou!!'
+  a.style.background = 'green'
+}
+function sair(){
+ a.innerText = 'Saiu!!'
+ a.style.background = 'blue'
+}
 
 
 
