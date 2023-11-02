@@ -303,13 +303,55 @@ teste ? true : false|
 
 window.document.write(window.document.charset)
 
-- Elementos:
+>  Elementos:
 
-Por marca
-Por ID
-Por nome
-Por Classe
-Por Selector
+- Por marca:
+
+. window.document.getElementsByTagName()
+. var corpo = window.document.body;
+. var p1 = window.document.getElementsByTagName('p')[1];
+. window.document.write(`Está escrito assim: ${p1.innerHTML}`);
+. /alert(`Está escrito assim: ${p1.innerText}`);
+. corpo.style.background = '';
+. p1.style.color = 'blue';
+
+- Por ID:
+
+. getElementByld()
+. var b = window.document.getElementById('msg');
+. window.document.write(b.innerHTML)
+. b.style.background = 'blue'
+. b.innerText = 'Aguardando ....'
+. window.document.getElementById('msg').innerText = 'Aguardando....'
+
+- Por nome:
+
+. getElementsByName()
+. var d = window.document.getElementsByName('msg')[0];
+. window.document.write(d.innerHTML);
+. d.innerHTML = 'Aguardando...' 
+
+- Por Classe:
+
+. getElementsByClassName()
+. var classe = window.document.getElementsByClassName('msg')[0];
+. window.document.write(classe.innerHTML);
+. classe.innerHTML = 'Aguardando...';
+. classe.style.color = 'blue' 
+
+- Por Selector:
+
+> querySeletor()
+
+. var d = window.document.querySelector('div#msg');
+. window.document.write(d.innerHTML);
+. d.innerHTML = 'Aguardando...';
+. d.style.color = 'blue';
+
+> querySelectorAll() 
+
+. var d = window.document.querySelectorAll('div#msg')[0];
+. window.document.write(d.innerHTML);
 
 
 

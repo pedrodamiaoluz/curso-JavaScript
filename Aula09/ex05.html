@@ -17,10 +17,53 @@
     <h1>Iniciando estudos com Dom</h1>
     <p>Aqui vai o resultado</p>
     <p>Apredendo a usar o <strong>Dom</strong> em JavaScript</p>
-    <div>Clique em mim</div>
-
+    <div id="msg">Clique em mim</div>
+     <br>
     <script>
-        window.document.write(window.document)
+
+        // Aqui e usando por marca:
+
+        // var corpo = window.document.body;
+        // var p1 = window.document.getElementsByTagName('p')[1];
+        // window.document.write(`Está escrito assim: ${p1.innerHTML}`);
+        // //alert(`Está escrito assim: ${p1.innerText}`);
+        //  corpo.style.background = '';
+        //  p1.style.color = 'blue';
+
+         // Usando com id:
+         
+        //  var b = window.document.getElementById('msg');
+        //  window.document.write(b.innerHTML);
+        //  b.style.background = 'blue';
+        //  b.innerText = 'Aguardando ....';
+        // window.document.getElementById('msg').innerText = 'Aguardando....'
+
+        // Usando com nome:
+
+        // var d = window.document.getElementsByName('msg')[0];
+        // window.document.write(d.innerHTML);
+        // d.innerHTML = 'Aguardando...'
+
+        // Usando com Classe
+
+        // var classe = window.document.getElementsByClassName('msg')[0];
+        // window.document.write(classe.innerHTML);
+        // classe.innerHTML = 'Aguardando...';
+        // classe.style.color = 'blue'
+        
+        // Usando Seletor
+
+        // var d = window.document.querySelector('div#msg');
+        // window.document.write(d.innerHTML);
+        // d.innerHTML = 'Aguardando...';
+        // d.style.color = 'blue';
+
+        // var d = window.document.querySelectorAll('div#msg')[0];
+        // window.document.write(d.innerHTML);
+
+
+
+
     </script>
     
 </body>
