@@ -18,12 +18,27 @@
            line-height: 200px;
            text-align: center;
         }
+
+        div#sel{
+            font: normal 30px Arial;
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin-top: 10px;
+           
+        }
     </style>
 </head>
 <body>
     <h1>Eventos Em Dom:</h1>
     <div id="area">
         Interaja...
+    </div>
+    <div id="sel">
+        Aguardando...
     </div>
     <script>
         var a = window.document.getElementById('area');
@@ -42,6 +57,24 @@
         function sair(){
          a.innerText = 'Saiu!!'
          a.style.background = 'blue'
+        }
+
+        var b = window.document.querySelector('div#sel');
+         b.addEventListener('click',clic);
+         b.addEventListener('mouseenter',entr);
+         b.addEventListener('mouseout',sai);
+
+        function clic() {
+           b.innerText = 'Visitou!!!'
+           b.style.background = 'black';
+        }
+        function entr(){
+          b.innerText = 'Estou!!!';
+          b.style.background = 'brown'
+        }
+        function sai(){
+          b.innerText = 'Fora!!!'
+          b.style.background = 'rgb(40, 80, 1)'
         }
     </script>
 </body>
