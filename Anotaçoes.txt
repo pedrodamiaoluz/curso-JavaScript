@@ -391,6 +391,52 @@ function sair(){
  a.style.background = 'blue'
 }
 
+<h1> > Somando Valores:</h1>
+<!--Trabalhando com Inputs-->
+<input type="number" name="texn1" id="texn1"> +
+<input type="number" name="texn2" id="texn2">
+<input type="button" value="Somar" onclick="somar()">
+<div id="res">Aguardando...</div>
+
+<script>
+   //Fiz uma função para soma os valores dos Inputs.
+   function somar() {
+    var tn1 = window.document.getElementById('texn1');
+    var tn2 = window.document.querySelector('input#texn2');
+    var rt = window.document.getElementById('res');
+    var n1 = Number(tn1.value);
+    var n2 = Number(tn2.value);
+    var s = n1 + n2;
+    rt.innerHTML = `Soma entre ${n1} + ${n2} = <strong>${s}</strong>`
+    }
+   
+</script>
+
+==================== Aula 11 Condições ==========================
+
+- Condições:
+
+                 Condições
+                     |
+                =====|=====
+                |         |
+              true      false
+               |---- 0 ---|
+                     |
+
+ if(condiçoes){
+    true
+ }else{
+    false
+ }
+
+ - condições simples:
+
+ if(condição){
+     true
+ }
+
+ - condições :
 
 
 
