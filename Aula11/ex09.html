@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>> Input para saber o Pais:</h1><hr>
+    Informe qual é o pais: <input type="text" name="texpai" id="texpai">
+    <button onclick="informa()">Enviar</button>
+    <div id="rest">Esperando...</div>
+
+    <script>
+       function informa() {
+           var tex = document.querySelector('input#texpai')
+           var rest = document.querySelector('div#rest')
+           var pais = String(tex.value)
+           rest.innerHTML = `<p>O pais que você esta vivendo é ${pais}</p>`
+           if(pais != 'Brasil'){
+               rest.innerHTML += `<p>Você é Estrangeiro</p>`
+            }else{
+               rest.innerHTML += `<p>Você é Brasileiro</p>`
+           }
+        
+       }
+
+    </script>
+</body>
+</html>
