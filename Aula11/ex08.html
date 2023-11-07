@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DETRAN</title>
+    <style>
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <script src="index.js"></script>
+    <h1>> Sistema de Multa</h1>
+    Velocidade do carro: <input type="number" name="texvel" id="texvel"> Km/h  
+    <input type="button" value="Verificar" onclick="calcular()">
+    
+    <!-- <div id="res">Aguardando...</div>
+    <script>
+        function calcular(){
+            var tex = window.document.querySelector('input#texvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(tex.value)
+            res.innerHTML = `<p>Sua velocidade atual é de ${vel}Km/h</p>`
+
+            if(vel > 60){
+              res.innerHTML += `<p>Você esta Multado</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com o sinto de segurança.</p>`
+        }
+    </script> -->
+    <script>
+        function calcular(){
+            var tex = window.document.querySelector('input#texvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(tex.value)
+            var n1 = document.write(`<p>Sua velocidade atual é de ${vel}Km/h</p>`)
+            
+            if(vel > 60){
+              n1 += document.write(`<p>Você esta Multado</p>`)
+            }
+              n1 += document.write(`<p>Dirija sempre com o sinto de segurança.</p>`)
+        }
+    </script>
 </body>
 </html>
