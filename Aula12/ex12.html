@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condições exe 12</title>
+    <style>
+        button#but{
+            background-color: red;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            
+            
+        }
+    </style>
 </head>
 <body>
-    <script src="ex12.js"></script>
+    <h1>Informa os Horarios</h1><hr>
+    Informe a Hora: <input type="number" name="texhr" id="texhr">
+    <button id="but" onclick="horas()">Enviar</button>
+    <div id="rest">Esperando...</div>
+    <script>
+         function horas(){
+             var tex = document.querySelector('input#texhr')
+             var resp = document.querySelector('div#rest')
+             var hora = Number(tex.value)
+             resp.innerHTML = `<p>Agora são exatamente ${hora} horas</p>`
+             if(hora < 12){
+                 resp.innerHTML += '<p>Bom Dia!!!</p>'
+             }else if(hora < 18){
+                 resp.innerHTML += '<p>Boa Tarde!!!</p>'
+             }else{
+                 resp.innerHTML += '<p>Boa Noite!!!</p>'
+             }
+            }
+    </script>
 </body>
 </html>
