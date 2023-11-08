@@ -10,13 +10,13 @@
     Informe qual é o pais: <input type="text" name="texpai" id="texpai">
     <button onclick="informa()">Enviar</button>
     <div id="rest">Esperando...</div>
-
+                                                                          
     <script>
        function informa() {
            var tex = document.querySelector('input#texpai')
            var rest = document.querySelector('div#rest')
-           var pais = String(tex.value)
-           rest.innerHTML = `<p>O pais que você esta vivendo é ${pais}</p>`
+           var pais = tex.value
+           rest.innerHTML = `<p>O pais que você esta vivendo é <strong>${pais}</strong></p>`
            if(pais != 'Brasil'){
                rest.innerHTML += `<p>Você é Estrangeiro</p>`
             }else{

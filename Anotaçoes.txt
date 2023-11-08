@@ -440,7 +440,7 @@ var vel = Number(prompt('Informe a velocidade?'));
 
 console.log(`A velocidade do seu carro é ${vel} Km/h`);
 
-if(vel > 60){ //Codição Simple.
+if(vel > 60){
     console.log(`Você ultrapassou a velocidade permitida. Multado`)
 }
     console.log(`Dirija sempre com sinto de segurança`);
@@ -449,7 +449,7 @@ if(vel > 60){ //Codição Simple.
 
 var pais = prompt('Informe o Pais?');
 
-    console.log(`Vivendo em ${pais}`);
+console.log(`Vivendo em ${pais}`);
 
 if(pais == 'Brasil'){
     console.log('Você é Brasileiro');
@@ -457,7 +457,17 @@ if(pais == 'Brasil'){
     console.log('Você é Estrangeiro');
 }
 
- 
+ - Condições Aninhadas:
+
+var idade = 12;
+var idade = Number(prompt('Informe a sua idade?'))
+console.log(`Você tem ${idade} anos`)
+if(idade < 16){
+    console.log('Não volta')
+}else if(idade < 18 || idade > 65){
+    console.log('Volto opcional')           
+}else {
+    console.log('Volto Obrigatório')
 
 
 
