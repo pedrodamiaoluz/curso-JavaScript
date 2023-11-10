@@ -13,27 +13,34 @@
 
     <section>
             <div>
-                Ano de Nascimento: <input type="number" name="nasc" id="nasc">
-            </div>
+                <p>Ano de Nascimento:
+                     <input type="number" name="texano" id="texano">
+                </p>
+        
+                <p> Sexo:
+                     <input type="radio" name="radsex" id="mas" checked>
+                     <label for="mas">Masculino</label>
+                     <input type="radio" name="radsex" id="fem">
+                     <label for="fem">Feminino</label>
+                </p>
+                <p>
+                   <button onclick="verifica()">Verificar</button>
+                </p>
+           </div>
+           
+           <div id="res">
+               Preencha os dados acima para ver o resultado!
+           </div>
+    </section>
+   
+       <footer>
+           <p>&copy; Pedro Damião</p>
+       </footer>
+       <script src="script.js"></script>
+   </body>
+   </html>
             
-            <div>
-                 Sexo: <input type="radio" name="sex0" id="sex0">Masculino
-                       <input type="radio" name="sex1" id="sex1">Feminino
-            </div>
             
-           <div>
-               <button>Verificar</button>
-          </div>
+           
             
-            <div>
-                Preencha os dados acima para ver o resultado!
-            </div>
             
-     </section>
-
-    <footer>
-        <p>&copy; Pedro Damião</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
