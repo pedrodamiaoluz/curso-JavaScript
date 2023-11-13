@@ -491,6 +491,65 @@ switch(expressão){
 
 - Estrutura de repetição:
 
+funcao comerPizza(){
+  comerFatia()
+  comerFatia()
+  comerFatia()
+  comerFatia()
+  comerFatia()
+  comerFatia()
+  comerFatia()
+  comerFatia()
+
+}
+
+- Repetições:
+
+- Condição while:
+-------------------
+while(condição){
+
+}
+
+funcao comerPizza(){
+  while(temFatia()){
+    comerFatia()
+
+  }
+  
+}
+
+- Exemplo:
+
+var c = 1
+while (c <= 6) { // faz teste logico no inicio
+    console.log(`Passo ${c}`)
+    c++
+}
+
+
+- condição doWhile:
+---------------------
+
+do{ 
+  
+}while(condição)// teste lógico no final
+
+- Exemplo:
+
+var c = 1
+do {
+    console.log(`Passo ${c}`)
+    c++
+} while (c <= 2); // teste lógico no final
+
+- Condição for:
+
+console.log('Vai começar')
+for(var c = 1; c <= 6; c++){
+    console.log(`Passo ${c}`)
+}
+console.log('Fim')
 
 
 
