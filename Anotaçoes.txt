@@ -596,8 +596,52 @@ let num = [5, 8, 3, 2, 6]
      console.log(`A posição ${v} tem o valor ${valor[v]}`)
 
 
+     ===================== Aula 16 Funções ====================
 
+- Funções:
 
+   "São ações executadas assim que são camadas ou em decorrência de algum evento"
+   "Uma função pode receber parâmetros e retornar um resultado."
+
+- chamada
+- paremetro
+- Ação
+- retorno
+
+- Exemplos:
+
+function parimp(n){ // n é o parâmetro que a função esta resebendo 
+  if(n%2==0){ // Ação
+    return 'par'
+  }else{
+    return 'Impar'
+  }
+}
+
+let res = parimp(11) // fez a Chamada
+
+function soma(n1=0, n2=0){
+  return n1 + n2
+}
+
+console.log(`A soma é = ${soma(7)}``)
+
+let v = function(x){
+  return (`A multiplicação ${x} x ${2} = ${x*2}`)
+}
+console.log(v(7))
+
+// 5! = 5 x 4 x 3 x 2 x 1 = 
+
+function fatorial(n){
+    let fat = 1
+    for(let c = n; c > 1; c--){
+        fat *= c
+    }
+    return fat
+}
+
+console.log(`${fatorial(6)}`)
 
 
 
