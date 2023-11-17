@@ -641,7 +641,40 @@ function fatorial(n){
     return fat
 }
 
-console.log(`${fatorial(6)}`)
+console.log(`${fatorial(6)}``)
+
+===================== Aula 17 Próximos passos ====================
+
+- Próximos Passos:
+
+function
+objetos
+modularização
+RegEx
+JSoN
+Ajax
+Nodejs
+
+- Conteudos objetos:
+
+let amigo = {nome:'jose', sexo:'M', peso:85.6, engorda(p){}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
