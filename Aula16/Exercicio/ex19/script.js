@@ -25,7 +25,23 @@ function analizar(){
         let item = document.createElement('option')
         item.innerHTML = `Nome ${nome.value} Adicionado`
         lista.appendChild(item)
+        res.innerHTML = ''
     }else{
         alert('[ERRO] Nome invalido ou encontrado na lista')
+    }
+    nome.value = ''
+    nome.focus()
+}
+
+function verificar(){
+    if(valores.length == 0){
+        alert('[ERRO]! Prencha os nomes Primeiro antes de verificar')
+    }else{
+        let tot = valores.length
+        let nom = valores.sort()
+        res.innerHTML = ''
+        res.innerHTML += `<p>Tem ${tot} nome Cadastrados</p>`
+        res.innerHTML += `<p>${nom}</p>` 
+
     }
 }
